@@ -39,6 +39,7 @@
 	@Profile               //指定使用那套配置
 	
 	@ContextConfiguration
+	@Import 					//合并其他的Config类
 	@Slf4j 															//private  final Logger logger = LoggerFactory.getLogger(当前类名.class);
 	
 ## --------------JUnit-----------------------

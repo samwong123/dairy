@@ -247,6 +247,12 @@
 	
 	
 ## -------------------------nginx ------------------------------
+	调试选项:
+		worker_processes  1;    
+		error_log  logs/error.log debug; #  记录调试日志   
+		master_process  off;             #  单进程模式  
+		daemon          off;  
+		
 	语法规则：location [=|~|~*|^~] /uri/ { … }
 		= 开头表示精确匹配
 		^~ 开头表示uri以某个常规字符串开头，理解为匹配 url路径即可。nginx不对url做编码，因此请求为/static/20%/aa，可以被规则^~ /static/ /aa匹配到（注意是空格）。以xx开头
@@ -288,3 +294,15 @@
 	第三步：执行git clone https://github.com/golang/tools.git tools命令
 	第四步：执行git clone https://github.com/golang/lint.git命令
 	第五步：按下Ctrl/Command+Shift+P再次执行Go:Install/Update Tools命令，在弹出的窗口全选并点击确定，这一次的安装都会SUCCESSED了。
+
+## ------------------------ffmpeg---------------------------------------------
+	参数
+	-i input
+	-b:v
+	-r
+	-c:v
+	-s
+## --------------------------Linux--------------------------------------------
+	### python：
+		wget https://bootstrap.pypa.io/get-pip.py 
+		sudo python3 get-pip.py
